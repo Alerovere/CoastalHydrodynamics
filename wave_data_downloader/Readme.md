@@ -1,81 +1,116 @@
-# 🌊 Wave Analysis with Copernicus Marine Data
+# 🌊 Wave Data Analysis – Copernicus Marine Virtual Buoy Explorer
 
-This notebook allows you to **download, analyze, and visualize global wave data** from the [Copernicus Marine Service](https://marine.copernicus.eu/).  
-It is part of the [**CoastalHydrodynamics**](https://github.com/Alerovere/CoastalHydrodynamics) collection for teaching and research on ocean dynamics.
+This repository provides a student-friendly interactive notebook to **download, visualize, and analyze global wave data** from the [Copernicus Marine Service (CMEMS)](https://marine.copernicus.eu/).
 
----
+The tool is built for **educational and research purposes**, enabling students and researchers to explore long-term wave conditions, identify extreme events, and generate return period statistics directly from reanalysis data.
 
-## 📦 Features
+> 🧪 Designed to run in **Google Colaboratory**, with automatic Google Drive integration and output folders for data and plots.
 
-- ✅ Download **global wave reanalysis data** from the CMEMS `GLOBAL_REANALYSIS_WAV_001_032` product  
-- 🧭 Define an **area of interest** and place a **virtual wave buoy**
-- 📉 Plot wave height, period, and direction
-- 📤 Export data and graphics for reports and analysis
-- 📆 Interactively select time intervals for custom analysis
-- 📈 Perform **extreme value statistics** and return period calculations (Gumbel + GEV)
-- 🔥 Create **heatmaps and strip plots** of wave statistics over time
-- 🧭 Visualize **directional trends** using polar plots
+🎬 *A YouTube tutorial will be linked here once published.*
 
 ---
 
-## 🧑‍🏫 For Students
+## 🚀 Features
 
-This notebook is designed to support **learning through exploration**.  
-Each code block is clearly explained and marked where user input is expected.  
-
-The notebook runs best on **Google Colaboratory** and saves output to your **Google Drive**.
+- 📦 Downloads **global wave reanalysis data** (`GLOBAL_REANALYSIS_WAV_001_032`)
+- 🧭 Lets you define a **study area and a virtual wave buoy**
+- 🗺 Visualizes wave height, period, and direction on maps (with vector arrows and contours)
+- 📈 Plots **time series**, **wind roses**, and **heatmaps**
+- 🔍 Detects and plots **extreme wave events**
+- 📊 Performs **return period analysis** using **Gumbel** and **GEV** distributions with bootstrap confidence intervals
+- 🔥 Includes **climate strips** and **monthly anomaly heatmaps**
+- 💾 Exports data and graphics to organized folders
 
 ---
 
-## 📁 Structure
+## 📁 Included Example Files
+
+This repository includes example data and a structured layout to get you started:
 
 ```
-wave_analysis/
-├── Download_waves_Copernicus.ipynb                ← Main analysis notebook
-├── output_data/                  ← Exported CSV data
-├── output_images/                ← Generated figures
+wave_copernicus_virtual_buoy/
+├── notebook.ipynb                ← Main analysis notebook
+├── output_data/                  ← Folder for CSV exports
+├── output_images/                ← Folder for generated figures
 ```
 
 ---
 
-## 🚀 Getting Started
+## 🧪 How to Use It (Google Colab)
 
-1. 🔓 **Create an account** on [marine.copernicus.eu](https://marine.copernicus.eu/)
-2. ✅ Save your credentials by running the command:
-   `copernicusmarine.login()`
-3. 🔽 Clone this repository or download it to your **Google Drive**
-4. 📍 Open the notebook in **Google Colab**
-5. 🗺 Define your **area of interest** and **virtual buoy** location
-6. ▶️ Run the notebook step by step
+This notebook is meant to be run in **Google Colaboratory** using files saved in your **Google Drive**.
+
+### 📥 Step-by-step:
+
+1. **Download this repository** as a ZIP:
+   - Click the green **`Code`** button at the top of this page
+   - Select **`Download ZIP`** and extract locally
+
+2. **Upload the folder to your Google Drive**:
+   - Suggested path: `My Drive/CoastalHydrodynamics/wave_copernicus_virtual_buoy/`
+
+3. **Open the notebook in Google Colab**:
+   - Right-click the `.ipynb` file in Drive → **"Open with" → Google Colaboratory**
+
+4. **Follow the steps in the notebook**:
+   - Mount Google Drive
+   - Set working directory and area of interest
+   - Download data (once only)
+   - Run visualization and analysis
+
+> ✅ All plots and outputs are automatically saved in the `output_images/` and `output_data/` folders.
 
 ---
 
-## ▶️ Demo Video
+## 🌐 Required Registration
 
-COMING SOON!
+To download data, you must:
+
+- 🔓 Create a free account at [marine.copernicus.eu](https://marine.copernicus.eu/)
+- 🔐 Log in via code using:
+  ```python
+  copernicusmarine.login()
+  ```
 
 ---
 
-## 📚 Dataset Info
+## 📦 Dependencies
 
-- **Product**: GLOBAL_REANALYSIS_WAV_001_032  
-- **Period**: 1993–2023  
-- **Resolution**: ~1/5°  
-- **DOI**: [10.48670/moi-00022](https://doi.org/10.48670/moi-00022)
+The notebook uses the following Python libraries (pre-installed in Google Colab):
 
-Reference:  
-*Law-Chune, S., Aouf, L., Dalphinet, A. et al. WAVERYS: a CMEMS global wave reanalysis. Ocean Dyn 71, 357–378 (2021).*
+- `copernicusmarine`, `xarray`, `numpy`, `pandas`
+- `matplotlib`, `cartopy`, `seaborn`, `scipy`
+- `plotly`, `ipywidgets`, `windrose`
+
+---
+
+## 📚 References
+
+- 📄 **Wave Data Source**: `GLOBAL_REANALYSIS_WAV_001_032`  
+  [🔗 DOI: 10.48670/moi-00022](https://doi.org/10.48670/moi-00022)  
+  Law-Chune et al. (2021), *Ocean Dynamics*, [https://doi.org/10.1007/s10236-020-01433-w](https://doi.org/10.1007/s10236-020-01433-w)
+
+- 🧭 **Copernicus Marine Service**:  
+  https://marine.copernicus.eu/
 
 ---
 
 ## 📝 Acknowledgments
 
-This notebook was developed by **Alessio Rovere** at **Ca' Foscari University of Venice**,  
-with the support of **ChatGPT by OpenAI** for code organization and documentation.
+This script was developed by **Alessio Rovere** at **Ca' Foscari University of Venice**, with the support of **ChatGPT by OpenAI** for code structuring, optimization, and documentation refinement.
 
-This work is part of the **WARMCOASTS** project, funded by the **European Research Council (ERC)**  
-under the European Union’s Horizon 2020 programme (grant agreement n. **802414**).
+This work is part of the **WARMCOASTS** project, funded by the **European Research Council (ERC)** under the European Union’s Horizon 2020 research and innovation programme (grant agreement n. **802414**).
 
-> ⚠️ **Disclaimer**:  
-> Code is provided as-is. Users must validate outputs and adapt it to their research.  
-> Neither the authors nor the EU are liable for any outcomes derived from this tool.
+⚠️ **Disclaimer:**  
+The code is provided *as is*, without warranties of any kind. Users are responsible for verifying outputs and adapting the scripts to their needs. Neither the authors nor the European Union can be held liable for outcomes resulting from the use of this tool.
+
+---
+
+## 📘 Citation
+
+If you use this notebook in teaching, publications, or derivative works, please cite the original dataset and link to this repository.
+---
+
+## 📬 Contact
+
+For feedback or suggestions, open an issue on GitHub or reach out to the project maintainer.
