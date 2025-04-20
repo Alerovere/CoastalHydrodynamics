@@ -31,12 +31,9 @@ The notebook runs best on **Google Colaboratory** and saves output to your **Goo
 
 ```
 wave_analysis/
-├── notebook.ipynb                ← Main analysis notebook
+├── Download_waves_Copernicus.ipynb                ← Main analysis notebook
 ├── output_data/                  ← Exported CSV data
 ├── output_images/                ← Generated figures
-├── example_files/
-│   ├── virtual_buoy_sample.csv
-│   └── readme_example.txt
 ```
 
 ---
