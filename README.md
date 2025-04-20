@@ -21,6 +21,7 @@ Each module is self-contained and includes:
 
 | Module                  | Description |
 |-------------------------|-------------|
+| [`wave_data_downloader`](./wave_data_downloader)        | Download wave data from the COPERNICUS marine database |
 | [`wave_runup_model`](./wave_runup_model)        | Estimate wave runup using empirical models and IPCC sea-level rise scenarios |
 
 ---
