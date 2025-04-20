@@ -6,6 +6,8 @@ The tool is intended for **educational use** (e.g., in Earth Science or Environm
 
 > 🧪 Designed to be used in **Google Colaboratory**, with example datasets included.
 
+🎬 [Watch the full tutorial on YouTube](https://www.youtube.com/watch?v=kcAzz0qn29U)
+
 ---
 
 ## 🚀 Features
