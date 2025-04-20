@@ -94,7 +94,7 @@ The code is provided *as is*, without any warranties or guarantees of correctnes
 
 ---
 
-## 📘 Citation
+## 📘 Sources
 
 If you use or adapt this notebook for teaching or research, please credit the original authors of the runup models and acknowledge this repository.
 
