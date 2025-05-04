@@ -92,3 +92,27 @@ Part of the **WARMCOASTS** project, funded by the **European Research Council (E
 ## 📬 Contact
 
 For questions, improvements, or reporting issues, please open a GitHub Issue or contact the project maintainer directly.
+
+
+---
+
+## 🌐 External Tools Required
+
+To run XBeach simulations, you will need to install the following tools locally:
+
+- 🧰 **Delft Dashboard** – for building the initial XBeach model grid and input files  
+  🔗 [https://publicwiki.deltares.nl/spaces/DDB/pages/77234207/Download](https://publicwiki.deltares.nl/spaces/DDB/pages/77234207/Download)
+
+- 🌊 **XBeach** – the simulation engine  
+  🔗 [https://download.deltares.nl/xbeach](https://download.deltares.nl/xbeach)
+
+---
+
+## 📦 Note on Input Folder Structure
+
+This script assumes that the `Model/` folder already contains a complete set of XBeach input files **exported from Delft Dashboard**. These include:
+
+- `x.grd`, `y.grd`, `bed.dep`, `params.txt`, `tide.txt`, etc.
+
+> 📹 For a step-by-step guide to creating the initial model with Delft Dashboard, see:  
+👉 [https://www.youtube.com/watch?v=SgE-CFRTjB8](https://www.youtube.com/watch?v=SgE-CFRTjB8)
