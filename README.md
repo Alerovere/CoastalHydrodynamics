@@ -23,6 +23,7 @@ Each module is self-contained and includes:
 |-------------------------|-------------|
 | [`wave_data_downloader`](./wave_data_downloader)        | Download wave data from the COPERNICUS marine database |
 | [`wave_runup_model`](./wave_runup_model)        | Estimate wave runup using empirical models and IPCC sea-level rise scenarios |
+| [`XBeach_model`](./XBeach_model)        | Preprocess, run and postprocess data from a simple XBeach hydrodynamic model |
 
 ---
 
@@ -32,6 +33,7 @@ These notebooks are designed to run in **Google Colaboratory**, with:
 - Google Drive for file storage and access
 - Built-in Python libraries like `pandas`, `matplotlib`, `numpy`, etc.
 - Some modules include additional libraries (e.g. `ipywidgets`, `py-wave-runup`)
+- For the XBeach model folder, Delft Dashboard and XBeach must be downloaded from the sources indicated in the respective pages.
 
 ---
 
