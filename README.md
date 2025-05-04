@@ -23,7 +23,7 @@ Each module is self-contained and includes:
 |-------------------------|-------------|
 | [`wave_data_downloader`](./wave_data_downloader)        | Download wave data from the COPERNICUS marine database |
 | [`wave_runup_model`](./wave_runup_model)        | Estimate wave runup using empirical models and IPCC sea-level rise scenarios |
-| [`XBeach_model`](./XBeach_model)        | Preprocess, run and postprocess data from a simple XBeach hydrodynamic model |
+| [`XBeach_setup`](./XBeach_setup)        | Preprocess data from a simple XBeach hydrodynamic model created in Delft Dashboard|
 
 ---
 
