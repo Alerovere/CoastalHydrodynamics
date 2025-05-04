@@ -7,7 +7,7 @@ The script is designed to support **educational and research applications** by g
 
 > 🌐 Fully compatible with **Google Colaboratory**, with automatic Google Drive integration for file input and output.
 
-🎬 *YouTube tutorial coming soon*
+🎬 [Watch the full tutorial on YouTube](https://youtu.be/UXrbVK4_6f4)
 
 ---
 
