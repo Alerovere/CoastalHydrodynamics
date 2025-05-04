@@ -6,7 +6,7 @@ The tool is built for **educational and research purposes**, enabling students a
 
 > 🧪 Designed to run in **Google Colaboratory**, with automatic Google Drive integration and output folders for data and plots.
 
-🎬 *A YouTube tutorial will be linked here once published.*
+🎬 [Watch the full tutorial on YouTube](https://youtu.be/iTavyBcSzu0)
 
 ---
 
@@ -28,10 +28,8 @@ The tool is built for **educational and research purposes**, enabling students a
 This repository includes example data and a structured layout to get you started:
 
 ```
-wave_copernicus_virtual_buoy/
+wave_data_downloader/
 ├── notebook.ipynb                ← Main analysis notebook
-├── output_data/                  ← Folder for CSV exports
-├── output_images/                ← Folder for generated figures
 ```
 
 ---
@@ -47,7 +45,7 @@ This notebook is meant to be run in **Google Colaboratory** using files saved in
    - Select **`Download ZIP`** and extract locally
 
 2. **Upload the folder to your Google Drive**:
-   - Suggested path: `My Drive/CoastalHydrodynamics/wave_copernicus_virtual_buoy/`
+   - Suggested path: `My Drive/CoastalHydrodynamics/wave_data_downloader/`
 
 3. **Open the notebook in Google Colab**:
    - Right-click the `.ipynb` file in Drive → **"Open with" → Google Colaboratory**

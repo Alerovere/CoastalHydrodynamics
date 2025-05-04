@@ -1,0 +1,67 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%% XBeach parameter settings input file                                     %%%
+%%%                                                                          %%%
+%%% date:     21-Apr-2025 18:51:34                                           %%%
+%%% function: xb_write_params                                                %%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%%% General %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+alfa         = 0
+back         = abs_2d
+bcfile       = jonswap.txt
+bedfriction  = manning
+depfile      = bed.dep
+front        = abs_2d
+gridform     = xbeach
+instat       = jons_table
+morfac       = 1
+nx           = 248
+ny           = 189
+outputformat = netcdf
+posdwn       = 0
+thetamax     = 198
+thetamin     = 18
+thetanaut    = 1
+tideloc      = 2
+vardx        = 1
+xfile        = x.grd
+xori         = 0
+yfile        = y.grd
+yori         = 0
+zs0file      = tide.txt
+
+bedfricfile = manning_layer.dep
+ne_layer    = non_erodible_layer.dep
+
+D50 = 0.000200
+wavemodel    = 0
+dtheta     = 10
+
+
+
+tintg        = 7650
+tintm        = 183600
+tstart       = 0
+tstop        = 183600
+
+%%% Output variables %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+nglobalvar   = 7
+zb
+zs
+H
+u
+v
+sedero
+c
+
+nmeanvar     = 9
+zb
+zs
+maxzs
+H
+u
+v
+sedero
+qx
+hh
